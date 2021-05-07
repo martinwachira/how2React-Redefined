@@ -1,4 +1,5 @@
-# Getting Started with Create React App (How2React Redefined)
+# Getting Started with Create React App 
+## (How2React Redefined)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
