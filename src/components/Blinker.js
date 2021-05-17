@@ -6,14 +6,14 @@ function Blinker() {
   const [blink, setBlink] = useState(true);
   const [reverse, setReverse] = useState(false);
 
-  const words = ["Hi, let's get started."];
+  const statements = ["Hi, let's get started."];
 
   // typeWriter
   useEffect(() => {
-    if (index === words.length) return;
+    if (index === statements.length) return;
     if (
-      subIndex === words[index].length + 1 &&
-      index !== words.length - 1 &&
+      subIndex === statements[index].length + 1 &&
+      index !== statements.length - 1 &&
       !reverse
     ) {
       setReverse(true);
@@ -26,7 +26,7 @@ function Blinker() {
     }
     const timeout = setTimeout(() => {
       setSubIndex((prev) => prev + (reverse ? -1 : 1));
-    }, Math.max(reverse ? 75 : subIndex === words[index].length ? 1000 : 150, parseInt(Math.random() * 350)));
+    }, Math.max(reverse ? 75 : subIndex === statements[index].length ? 1000 : 150, parseInt(Math.random() * 350)));
     return () => clearTimeout(timeout);
   }, [subIndex, index, reverse]);
 
@@ -39,7 +39,10 @@ function Blinker() {
   }, [blink]);
 
   return (
-    <h2> {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}</h2>
+    <h2 style={{ color: "white" }}>
+      {" "}
+      {`${statements[index].substring(0, subIndex)}${blink ? "|" : " "}`}
+    </h2>
   );
 }
 export default Blinker;
