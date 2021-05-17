@@ -2,7 +2,7 @@ import React from "react";
 import Expenses from "./components/Expenses/Expenses";
 import Blinker from "./components/UI/Blinker";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: 2,
@@ -36,6 +36,6 @@ function App() {
       <Expenses item={expenses} />
     </div>
   );
-}
+};
 
 export default App;

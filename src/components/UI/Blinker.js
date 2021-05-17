@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function Blinker() {
+const Blinker = () => {
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [blink, setBlink] = useState(true);
@@ -44,5 +44,5 @@ function Blinker() {
       {`${statements[index].substring(0, subIndex)}${blink ? "|" : " "}`}
     </h2>
   );
-}
+};
 export default Blinker;
