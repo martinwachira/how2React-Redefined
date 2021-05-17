@@ -1,6 +1,6 @@
 import React from "react";
-import Expenses from "./components/Expenses";
-import Blinker from "./components/Blinker";
+import Expenses from "./components/Expenses/Expenses";
+import Blinker from "./components/UI/Blinker";
 
 function App() {
   const expenses = [
