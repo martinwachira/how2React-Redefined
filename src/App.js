@@ -1,4 +1,5 @@
 import Expenses from "./components/Expenses";
+import Blinker from "./components/Blinker";
 
 function App() {
   const expenses = [
@@ -27,9 +28,10 @@ function App() {
       price: 150,
     },
   ];
+
   return (
     <div>
-      <h2>Let's get started</h2>
+      <Blinker />
       <Expenses item={expenses} />
     </div>
   );
