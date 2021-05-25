@@ -28,6 +28,7 @@ const Blinker = () => {
       setSubIndex((prev) => prev + (reverse ? -1 : 1));
     }, Math.max(reverse ? 75 : subIndex === statements[index].length ? 1000 : 150, parseInt(Math.random() * 350)));
     return () => clearTimeout(timeout);
+    // eslint-disable-next-line
   }, [subIndex, index, reverse]);
 
   // blinker

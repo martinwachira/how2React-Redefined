@@ -1,6 +1,7 @@
 import React from "react";
 import Expenses from "./components/Expenses/Expenses";
 import Blinker from "./components/UI/Blinker";
+import Register from "./components/Registration/Register";
 
 const App = () => {
   const expenses = [
@@ -32,6 +33,7 @@ const App = () => {
 
   return (
     <div>
+      <Register />
       <Blinker />
       <Expenses item={expenses} />
     </div>
