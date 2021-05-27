@@ -1,5 +1,6 @@
 import React from "react";
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 import Blinker from "./components/UI/Blinker";
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
   return (
     <div>
       <Blinker />
+      <NewExpense />
       <Expenses item={expenses} />
     </div>
   );
