@@ -8,7 +8,7 @@ const Blinker = () => {
 
   const statements = ["Hi, let's get started."];
 
-  // typeWriter
+  // typeWriter --custom
   useEffect(() => {
     if (index === statements.length) return;
     if (
