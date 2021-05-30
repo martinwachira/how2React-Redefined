@@ -20,7 +20,7 @@ const ExpenseForm = () => {
     event.preventDefault();
     const expenseObject = {
       title: enteredTitle,
-      amount: setEnteredAmount,
+      amount: enteredAmount,
       date: new Date(enteredDate),
     };
     console.log(expenseObject);
