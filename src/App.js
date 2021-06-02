@@ -5,7 +5,7 @@ import Blinker from "./components/UI/Blinker";
 
 const DUMB_EXP = [
   {
-    id: 2,
+    id: 1,
     date: new Date(2019, 3, 14),
     title: "House Door",
     price: 110,
