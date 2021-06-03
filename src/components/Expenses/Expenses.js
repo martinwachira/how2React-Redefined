@@ -14,7 +14,19 @@ const Expenses = (props) => {
     return expense.date.getFullYear().toString() === filteredYear;
   });
 
-  // console.log(filteredYear);
+  /* conditional logic */
+  // maintains a lean jsx by only returning the assigned variable //
+  let expenseData = <p>No expenses found.</p>;
+  if (theFilteredExpense.length > 0) {
+    expenseData = theFilteredExpense.map((expense) => (
+      <ExpenseItem
+        key={expense.id}
+        title={expense.title}
+        price={expense.price}
+        date={expense.date}
+      />
+    ));
+  }
   return (
     <div>
       <Card className="expenses">
@@ -22,16 +34,7 @@ const Expenses = (props) => {
           selected={filteredYear}
           onChangeHandler={filterChangeHandler}
         />
-        {theFilteredExpense.length === 0 && <p>No expenses found.</p>}
-        {theFilteredExpense.length > 0 &&
-          theFilteredExpense.map((expense) => (
-            <ExpenseItem
-              key={expense.id}
-              title={expense.title}
-              price={expense.price}
-              date={expense.date}
-            />
-          ))}
+        {expenseData}
       </Card>
     </div>
   );
