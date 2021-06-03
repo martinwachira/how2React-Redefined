@@ -12,7 +12,7 @@ const DUMB_EXP = [
   },
   {
     id: 2,
-    date: new Date(2017, 5, 20),
+    date: new Date(2020, 5, 20),
     title: "Laptop",
     price: 120,
   },
@@ -24,7 +24,7 @@ const DUMB_EXP = [
   },
   {
     id: 4,
-    date: new Date(2015, 7, 30),
+    date: new Date(2020, 7, 30),
     title: "Heater",
     price: 150,
   },
@@ -43,7 +43,7 @@ const App = () => {
     <div>
       <Blinker />
       <NewExpense onAddExpense={addExpenseHandler} />
-      <Expenses item={expenses} />
+      <Expenses items={expenses} />
     </div>
   );
 };
