@@ -12,21 +12,27 @@ const DUMB_EXP = [
   },
   {
     id: 2,
-    date: new Date(2020, 5, 20),
+    date: new Date(2020, 6, 20),
     title: "Laptop",
     price: 120,
   },
   {
     id: 3,
-    date: new Date(2021, 11, 30),
+    date: new Date(2021, 11, 10),
     title: "Car Engine",
     price: 8900,
   },
   {
     id: 4,
-    date: new Date(2020, 7, 30),
+    date: new Date(2020, 6, 30),
     title: "Heater",
     price: 150,
+  },
+  {
+    id: 5,
+    date: new Date(2020, 7, 12),
+    title: "Keyboard",
+    price: 15,
   },
 ];
 
