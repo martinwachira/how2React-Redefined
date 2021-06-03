@@ -6,7 +6,10 @@ const Blinker = () => {
   const [blink, setBlink] = useState(true);
   const [reverse, setReverse] = useState(false);
 
-  const statements = ["Hi, let's get started."];
+  const statements = [
+    "Hi, let's get started.",
+    "This is React Redefined 1. Welcome",
+  ];
 
   // typeWriter --custom
   useEffect(() => {
